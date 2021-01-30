@@ -1,0 +1,52 @@
+@import '../styles.scss';
+
+.imgCont {
+    display:table-cell;
+    background-color: $blue;
+    height: 164px;
+    width: 160px;
+    border-radius: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+.header {
+    text-align: center;
+    height: 450px;
+    margin: 2% 0% 10% 0%;
+    #teal {
+        color: $teal;
+    }
+    .row {
+        height: 100%;
+    }
+}
+#mobileHeader {
+    display: none;
+}
+#headerText{
+    background-image: url("../assets/bg-hero-squiggle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#imgHeaderLeft {
+    background-image: url("../assets/illustration-hero-left.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imgHeaderRight {
+    background-image: url("../assets/illustration-hero-right.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content {
+    .row{
+        height: 400px;
+    }
+    .even {
+        bottom: 10%;
+    }
+    .odd {
+        top: 10%;
+    }
+}
