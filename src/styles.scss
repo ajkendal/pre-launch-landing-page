@@ -8,6 +8,8 @@ $teal: #3ee9e5;
 $blue: #093f68;
 $grey: #777f98;
 $warning: $teal;
+$primary: $teal;
+
 
 body{
     background-color: $background;
@@ -19,7 +21,7 @@ h1, h2, h3, h4 {
     margin-top: 5%;
     margin-bottom: 5%;
 }
-p, li {
+p, li, .btn-primary {
     font-weight: 500;
     color: $grey;
     margin-top: 3%;

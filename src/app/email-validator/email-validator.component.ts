@@ -11,5 +11,6 @@ export class EmailValidatorComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }
