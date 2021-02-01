@@ -1,0 +1,31 @@
+<div class="container-fluid emailValidator">
+    <div class="row justify-content-md-center">
+        <div class="col-6 align-self-center">
+            <h3>Get notified when we launch</h3>
+
+            <form class="needs-validation" novalidate>
+                <div class="form-group">
+                    <div class="row justify-content-md-center">
+                        <div class="col-5">
+                            <input 
+                                type="email" 
+                                class="form-control requiredField" 
+                                id="inputEmail" 
+                                placeholder="Email address"
+                                [formControl]="emailValid"
+                                required
+                                [ngStyle]="{'box-shadow': emailValid.invalid && emailValid.dirty ? 'inset 0 0 0 2px #ff2965' : ''}"
+                                >
+                            <div class="invalid" *ngIf="emailValid.invalid && (emailValid.dirty || emailValid.touched)">
+                                <p>Oops! That doesn’t look like an email address</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary" (click)="onSubmit()">Get notified</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

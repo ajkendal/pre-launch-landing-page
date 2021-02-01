@@ -1,0 +1,61 @@
+@import '../../styles.scss';
+
+.pricing {
+    text-align: center;
+    padding-bottom: 2%;
+}
+.pricingColor {
+    #pricingLeft, #pricingRight{
+        border-radius: 8px;
+        margin: 1%;
+        padding: 2%;
+        z-index: 1;
+    }
+    li {
+        padding: 0;
+        margin: 1%;
+    }
+    ul {
+        padding-left: 5%;
+    }
+    .pricingImg {
+        margin: 0;
+        padding: 0;
+        z-index: 4;
+        position:absolute;
+    }
+}
+#pricingLeft {
+    .pricingImg {
+        top: -5%;
+    }
+    background-color: $blue;
+    h4, h2, p, li {
+        color: $white;
+    }
+    #pricingLeftText{
+        p, h2 {
+            display: inline;
+        }
+    }
+    li { 
+        list-style-image: url('../../assets/icon-check-white.png');
+    } 
+}
+#pricingRight {
+    .pricingImg {
+        top: -10%;
+    }
+    background-color: $teal;
+    h4, h2, p, li {
+        color: $background;
+    }
+    #pricingRightText{
+        p, h2 {
+            display: inline;
+        }
+    }
+    li { 
+        list-style-image: url('../../assets/icon-check.svg'); 
+    }
+}
