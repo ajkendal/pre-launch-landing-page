@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { EmailValidatorComponent } from './email-validator/email-validator.component';
 import { PricingPlanComponent } from './pricing-plan/pricing-plan.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { PricingPlanComponent } from './pricing-plan/pricing-plan.component';
     PricingPlanComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
