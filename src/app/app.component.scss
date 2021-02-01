@@ -53,3 +53,30 @@
         top: 10%;
     }
 }
+@media (max-width: $tablet-breakpoint){
+    .content{
+        .row {
+            height: auto;
+        }
+        .odd, .even {
+            display: table-cell;
+        }
+        .even {
+            left: 5%;
+        }
+        .odd {
+            right: 5%;
+        }
+        .imgCont {
+            float: left;
+            margin: 5%;
+            img {
+                position: relative;
+                bottom: -21%;
+            }
+        }
+    }
+}
+@media (max-width: $mobile-breakpoint){
+    
+}
